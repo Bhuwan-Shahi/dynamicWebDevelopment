@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register | Dynamic Web Development</title>
-    <link rel="stylesheet" href="registerCss.css" type="text/css">
+    <link rel="stylesheet" href="public/registerCss.css" type="text/css">
 </head>
 
 <body>
@@ -112,7 +112,7 @@
     </div>
 
 
-    <script src="script.js" type="text/javascript"></script>
+    <script src="public/script.js" type="text/javascript"></script>
 </body>
 
 </html>

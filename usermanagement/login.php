@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | Dynamic Web Development</title>
-    <link rel="stylesheet" href="loginCss.css" type = "text/css">
+    <link rel="stylesheet" href="public/loginCss.css" type = "text/css">
 </head> 
 <body>
 
@@ -72,6 +72,6 @@
         </div>
     </div>
 
-    <script src="scriptlogin.js" type="text/javascript"></script>
+    <script src="public/scriptlogin.js" type="text/javascript"></script>
 </body>
 </html>
