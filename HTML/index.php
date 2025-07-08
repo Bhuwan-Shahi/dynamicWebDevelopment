@@ -1,36 +1,26 @@
 <?php
-echo "Hello, World!";
-phpinfo();
+// Class and Objects in PHP
+class College {
+    var $id;
+    var $name;
+    var $email;
+    var $address;
 
+    public function setData($id, $n, $email, $address) {
+        $this->id = $id;
+        $this->name = $n;
+        $this->email = $email;
+        $this->address = $address;
+    }
 
-//Data types : string, number, boolean, undefined, null
-//major data typer : a> Primitive (built in) and b> non primitive (User-defined)
-
-
-//variable display
-// $name = "Bhuwan \n Shahi";
-// echo "$name";
-
-//Direct printing
-echo "Test \n Data";
-
-
-//array 
-$arry1 = ["$name", "email@test.com", 9765225479, 1];
-
-echo $arry1[1];
-echo "<pre>"
-print_r($arry1)
-var_dump($arry1)
-echo "<pre>"
-
-
-//Class and Objects in PHP
-class College{
-    var $name
-    var $address
-    var $phone
-
-    
+    public function getData() {
+        return $this->id . " , " . $this->name . "\n";
+    } 
 }
 
+$pic = new College();
+$pic->setData("3", "Padmashree", "pic@gmail.com", "Tinkune, Kathmandu");
+
+echo $pic->getData();
+
+?>
