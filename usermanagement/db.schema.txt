@@ -15,8 +15,25 @@ Create table users{
     password varchar(150) null,
     status boolean default  NOT NULL,
     creted_at   TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    updated_at TIIMESTAMP NULL
-
-
-
+    updated_at TIMESTAMP NULL,
 };
+
+
+
+
+Create table customers{
+    id int primary key auto_increment not null,
+    fullname varchar(50) not null,
+    email varchar(150) null,
+    address varchar(150) null,
+    phone varchar(150) null,
+    password varchar(150) null, 
+    status boolean default  NOT NULL,
+    creted_at   TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    updated_at TIMESTAMP NULL, 
+    updated_by int null,
+    foreign key (updated_by) references users(id) on update cascade,
+};
+
+
+
