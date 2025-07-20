@@ -1,3 +1,14 @@
+<?php
+    echo "<pre>";
+    print_r($_POST);
+    echo "</pre>";
+    if(isset($_POST['submit'])){
+        
+    }
+?>  
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +20,7 @@
 </head>
 
 <body>
+    <form action="#" method="POST" name "user-form" novalidate>
     <div class="form-container">
         <div class="form-header">
             <h1>Create Account</h1>
@@ -83,10 +95,6 @@
                 <div class="form-group">
                     <label for="city">City</label>
                     <input type="text" id="city" name="city">
-                </div>
-                <div class="form-group">
-                    <label for="zipCode">ZIP Code</label>
-                    <input type="text" id="zipCode" name="zipCode">
                 </div>
             </div>
 
